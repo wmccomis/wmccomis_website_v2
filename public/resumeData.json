@@ -90,7 +90,7 @@
         "title2": "Insights",
         "description1": "Startup focusing on developing technologies that increase aviation safety and increase FBO productivity. Developed mobile app and Aircraft Registration API",
         "techStack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean",
-        "image": "/assets/images/NDX-background.jpg",
+        "image": "/assets/images/ndx-background.jpg",
         "url": "https://ndxinsights.com"
       },
       {
