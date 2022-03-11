@@ -1,0 +1,146 @@
+{
+  "main": {
+    "name": "Will McComis",
+    "occupation": " Computer Science Student at Notre Dame",
+    "description": " currently employed by ",
+    "employer": "Google",
+    "jobDescription": " work on mobile development with Android and Google Play",
+    "image": "profile_pic.jpg",
+    "bio": "Hi! My name is Will McComis. I currently am a Junior at the University of Notre Dame. I am majoring in computer science, however I have a passion for aviation and love pairing the two together. Outside of the classroom, I enjoy being a part of the running club, a member of the CS for Good club, and a founder for the Aviation Association of Notre Dame. In the summer of 2020, I earned my private pilot's license and added an instrument rating to that in January 2021. If you see a plane buzzing over campus on the weekends, that's probably me taking my friends up. Aviation has quickly become a true passion of mine. The engineering fascinates me and I can't stop wanting to learn more and become a better pilot. While I do a lot on campus, I am also part of the Pilots N Paws organization, which connects me with animals in need of transport. Oftentimes, this is for medical needs. I mainly fly dogs in the Midwest such as from Ohio to Chicago. I have found this to be an incredible way for me to use my passion and talent for flying for the good of others. Once I gain enough experience, I hope to become a member of Angel Flight, which will allow me to fly humans in need of medical care such as cancer treatment or organ transplant. In my free time, I enjoy spending time with friends and family, running, wakeboarding, snowboarding, creating fun programs that (sometimes) make my life easier, and of course, flying planes.",
+    "contactmessage": "Interested in learning more about me or sharing your project with me? ",
+    "email": "wmccomis@nd.edu",
+    "phone": "(219) 798-2886",
+    "address": {
+      "city": "US"
+    },
+    "website": "http://www.williammccomis.com",
+    "resumedownload": "https://docs.google.com/document/d/1iJZgXSP8s1uz6pHucjUMD-Xey6vLm4nWyNwfzU-ILjw/export?format=pdf",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/will-mccomis-346301181",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/wmccomis",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "name": "Will McComis",
+    "resumemessage": "Computer Science student at the University of Notre Dame with a passion for developing cool programs that make people's lives better",
+    "contact": {
+      "email1": "wmccomis@nd.edu",
+      "email2": "williammccomis@gmail.com"
+    },
+    "education": {
+        "school": "University of Notre Dame, Notre Dame, IN",
+        "degree": "Bachelors of Science in Engineering",
+        "major": "Computer Science",
+        "dates": "August 2019 - May 2023",
+        "description": "",
+        "gpa" : "GPA: 3.973/4.000",
+        "scholarship": "Trustey Family Merit Scholar"
+      },
+    "work": [
+      {
+        "company": "NDX Insights, Tampa Bay, Florida",
+        "title": "Android Developer",
+        "years": "July 2021 - January 2022",
+        "line1": "Android development that made substantial contributionsto the company's aviation safety technologies.",
+        "line2": "Developed an API for the company's services that provides crucial data about aircraft dimensions and specifications",
+        "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
+      },
+      {
+        "company": "Collins Aerospace, Cedar Rapids, Iowa",
+        "title": "Avionics Systems Engineering Intern",
+        "years": "July 2021 - January 2022",
+        "line1": "Android development that made substantial contributionsto the company's aviation safety technologies.",
+        "line2": "Developed an API for the company's services that provides crucial data about aircraft dimensions and specifications",
+        "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
+      }
+    ],
+    "lifeExperience":[
+      {
+        "title": "Instrument Rated Pilot",
+        "dates": "August 2020 - Present",
+        "location": "Griffith, Indiana",
+        "description1": "Successfully passed FAA private pilot and instrument rating examinations",
+        "description2": "230+ total hours of flying experience"
+      },
+      {
+        "title": "Service to Cuba",
+        "dates": "July 2018, July 2019",
+        "location": "Havana, Cuba",
+        "description1": "Built a website, fundraised, made travel arrangements, and prepared lessons for the students attending the trip",
+        "description2": "Explored the culture, distributed donated items, visited with the elderly of Havana, and helped repaint homes"
+      }
+    ],
+    "skills": {
+      "technologies": "Github, Heroku, Android Studio, Xcode, AWS API, AWS CLI, SOLIDWORKS, MATLAB, Final Cut Pro, Adobe Premiere Pro, XD",
+      "languages": "C, Python, PostgreSQL, C++, JavaScript, React.js, MongoDB, Java, Kotlin, TensorFlow, PyTorch, Swift, Flutter, Dart, Ruby, Django"
+    }
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title1": "NDX ",
+        "title2": "Insights",
+        "description1": "Startup focusing on developing technologies that increase aviation safety and increase FBO productivity. Developed mobile app and Aircraft Registration API",
+        "techStack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean",
+        "image": "/assets/images/NDX-background.jpg",
+        "url": "https://ndxinsights.com"
+      },
+      {
+        "title1": "Lead ",
+        "title2": "Tracking",
+        "description1": "Developed a dynamic Google Map that helps the University of Notre Dame and city of South Bend keep track of lead testing in St. Joseph County",
+        "techStack": "Python, JavaScript, HTML",
+        "image": "/assets/images/lead-tracking-background.jpg",
+        "url": "https://github.com/wmccomis/South_Bend_Lead_Data_Tracking_Public"
+      },
+      {
+        "title1": "Personal ",
+        "title2": "Website",
+        "description1": "Developed this website to share my life skills and adventures",
+        "techStack": "React.js, CSS, HTML, Ruby on Rails",
+        "image": "/assets/images/website-background.jpg",
+        "url": "https://github.com/wmccomis/wmccomis_website"
+      },
+      {
+        "title1": "Google ",
+        "title2": "Preternship",
+        "description1": "This project for my Data Structures course in partnership with Marty Rose at Google increaed my understanding of algorithms that are able to balance the load between multiple machines",
+        "techStack": "Python, Linux",
+        "image": "/assets/images/google-background.jpg",
+        "url": "https://github.com/wmccomis/marty-rose-preternship-2021"
+      },
+      {
+        "title1": "Systems ",
+        "title2": "Programming",
+        "description1": "This course taught by Professor Bui dove into the world of the Unix system through the use of Shell, Python, and C",
+        "techStack": "Unix, Shell, C, Python, Make",
+        "image": "/assets/images/systems-background.jpg",
+        "url": "https://github.com/wmccomis/systems_programming_sp21"
+      },
+      {
+        "title1": "Collins ",
+        "title2": "Aerospace",
+        "description1": "Developed and Prototyped touchscreen Flight Control Panels. Also contributed to side projects related to ForeFlight integration and flight simulation",
+        "techStack": "Adobe XD, Javascript, HTML, CSS, React, C, Python, Xcode/Swift",
+        "image": "/assets/images/collins-background.jpg",
+        "url": "https://www.collinsaerospace.com/"
+      },
+      {
+        "title1": "YouTube ",
+        "title2": "Channel",
+        "description1": "YouTube Channel I use to showcase some fun events in my life and try to be creative",
+        "techStack": "Adobe Premiere Pro, After Effects, Photoshop, Final Cut Pro",
+        "image": "/assets/images/youtube-background.jpg",
+        "url": "https://www.youtube.com/channel/UCm3_y4l2dtPfTsrlgfzN3Gw"
+      }
+    ]
+  }
+}
