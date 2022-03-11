@@ -140,6 +140,15 @@
         "techStack": "Adobe Premiere Pro, After Effects, Photoshop, Final Cut Pro",
         "image": "/assets/images/youtube-background.jpg",
         "url": "https://www.youtube.com/channel/UCm3_y4l2dtPfTsrlgfzN3Gw"
+      },
+      {
+        "title1": "Personal ",
+        "title2": "Website ",
+        "title3": "v2",
+        "description1": "This is my most recent and current version of my website with some redesigns over the last iteration",
+        "techStack": "React.js, CSS, HTML, Heroku",
+        "image": "/assets/images/website-v2-background.jpg",
+        "url": "https://github.com/wmccomis/wmccomis_website_v2"
       }
     ]
   }

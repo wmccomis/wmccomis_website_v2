@@ -8,7 +8,7 @@ class Portfolio extends Component {
           <figure className="github-project">
               <img src={project.image}/>
               <figcaption>
-                <h2>{project.title1}<span>{project.title2}</span></h2>
+                {project.title3 == null ? <h2>{project.title1}<span>{project.title2}</span></h2> : <h2>{project.title1}<span>{project.title2}</span>{project.title3}</h2>}
                 <p>{project.description1}</p>
                 <p>{project.techstack}</p>
                 <a href={project.url} target="blank"></a>
