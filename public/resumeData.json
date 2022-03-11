@@ -57,9 +57,9 @@
         "company": "Collins Aerospace, Cedar Rapids, Iowa",
         "title": "Avionics Systems Engineering Intern",
         "years": "July 2021 - January 2022",
-        "line1": "Android development that made substantial contributionsto the company's aviation safety technologies.",
-        "line2": "Developed an API for the company's services that provides crucial data about aircraft dimensions and specifications",
-        "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
+        "line1": "Developed next generation Flight Control Panel",
+        "line2": "Conducted market research and a rigorous design process to develop a clean-sheet touchscreen panel",
+        "techstack": "Used C++ and Python to develop the software interface to drive the touchscreen"
       }
     ],
     "lifeExperience":[
