@@ -10,7 +10,7 @@ class Portfolio extends Component {
               <figcaption>
                 {project.title3 == null ? <h2>{project.title1}<span>{project.title2}</span></h2> : <h2>{project.title1}<span>{project.title2}</span>{project.title3}</h2>}
                 <p>{project.description1}</p>
-                <p>{project.techstack}</p>
+                <p>{project.techStack}</p>
                 <a href={project.url} target="blank"></a>
               </figcaption>     
           </figure>

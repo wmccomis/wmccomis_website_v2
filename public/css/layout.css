@@ -554,6 +554,11 @@ font-size: 1.25em;
 backface-visibility: hidden;
 }
 
+.grid figure figcaption p{
+  padding: 0;
+  line-height: 250%;
+}
+
 .grid figure figcaption::before,
 .grid figure figcaption::after {
 pointer-events: none;
