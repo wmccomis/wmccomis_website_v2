@@ -151,5 +151,14 @@
         "url": "https://github.com/wmccomis/wmccomis_website_v2"
       }
     ]
+  }, 
+  "features": {
+    "articles": [
+      {
+        "title": "IDEA CENTER STUDENT INTERN STORIES: WILLIAM MCCOMIS '23 JOINS STARTUP NDX",
+        "image": "/assets/images/profile-pic.jpg",
+        "url": "https://ideacenter.nd.edu/news-events/news/idea-center-student-intern-stories-william-mccomis-23-joins-startup-ndx/"
+      }
+    ]
   }
 }

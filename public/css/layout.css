@@ -1,21 +1,17 @@
 /*
 =====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
 
-   TOC:
+   Table of Contents:
    a. General Styles
    b. Header Styles
    c. About Section
    d. Resume Section
    e. Project Section
    f. Call To Action Section
-   g. Testimonials Section
    h. Contact Section
    i. Footer
    j. Flying
+   k. Featured
 
 ===================================================================== */
 
@@ -766,189 +762,6 @@ call-to-action .button {
   color: #d8d8d8;
 }
 
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
-
-#testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  background-attachment: fixed;
-
-  position: relative;
-  min-height: 200px;
-  width: 100%;
-  overflow: hidden;
-}
-#testimonials .text-container {
-  padding-top: 96px;
-  padding-bottom: 66px;
-}
-#testimonials h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fff;
-}
-#testimonials h1 span {
-  display: none;
-}
-#testimonials .header-col {
-  padding-top: 9px;
-}
-#testimonials .header-col h1:before {
-  font-family: "FontAwesome";
-  content: "\f10d";
-  padding-right: 10px;
-  font-size: 72px;
-  line-height: 72px;
-  text-align: left;
-  float: left;
-  color: #fff;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-  margin: 0 0px 30px 0px;
-  padding-left: 0;
-  position: relative;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#testimonials blockquote:before {
-  content: none;
-}
-#testimonials blockquote p {
-  font-family: "librebaskerville-italic", serif;
-  padding: 0;
-  font-size: 24px;
-  line-height: 48px;
-  color: #fff;
-}
-#testimonials blockquote cite {
-  display: block;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 18px;
-  color: #fff;
-}
-#testimonials blockquote cite:before {
-  content: "\2014 \0020";
-}
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited {
-  color: #8b9798;
-  border: none;
-}
-
-/* Flex Slider
-/* ------------------------------------------------------------------ */
-
-/* Reset */
-.flexslider a:active,
-.flexslider a:focus {
-  outline: none;
-}
-.slides,
-.flex-control-nav,
-.flex-direction-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.slides li {
-  margin: 0;
-  padding: 0;
-}
-
-/* Necessary Styles */
-.flexslider {
-  position: relative;
-  zoom: 1;
-  margin: 0;
-  padding: 0;
-}
-.flexslider .slides {
-  zoom: 1;
-}
-.flexslider .slides > li {
-  position: relative;
-}
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li {
-  display: none;
-  -webkit-backface-visibility: hidden;
-}
-/* Suggested container for slide animation setups. Can replace this with your own */
-.flex-container {
-  zoom: 1;
-  position: relative;
-}
-
-/* Clearfix for .slides */
-.slides:before,
-.slides:after {
-  content: " ";
-  display: table;
-}
-.slides:after {
-  clear: both;
-}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {
-  display: block;
-}
-
-/* Slider Styles */
-.slides {
-  zoom: 1;
-}
-.slides > li {
-  /*margin-right: 5px; */
-  overflow: hidden;
-}
-
-/* Control Nav */
-.flex-control-nav {
-  width: 100%;
-  position: absolute;
-  bottom: -20px;
-  text-align: left;
-}
-.flex-control-nav li {
-  margin: 0 6px;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-.flex-control-paging li a {
-  width: 12px;
-  height: 12px;
-  display: block;
-  background: #ddd;
-  background: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  text-indent: -9999px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3);
-}
-.flex-control-paging li a:hover {
-  background: #ccc;
-  background: rgba(255, 255, 255, 0.7);
-}
-.flex-control-paging li a.flex-active {
-  background: #fff;
-  background: rgba(255, 255, 255, 0.9);
-  cursor: default;
-}
-
 /* ------------------------------------------------------------------ */
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
@@ -1254,4 +1067,195 @@ footer .social-links li:first-child {
 #logbook{
   position: relative;
   left: 5%;
+}
+
+
+/* --------------------
+Section K: Featured
+----------------------*/
+
+#featured {
+  height: 100%;
+}
+
+#featured_logo{
+  width: 10%;
+  overflow: hidden;
+}
+
+#featured_container{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  /* top: -10vh; */
+  background:
+  url("../assets/images/news_background.jpg") center center no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.blurred-box{
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 2px;
+  top: -10vh;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.featured_header{
+  padding-top: 50px;
+  text-align: center;
+}
+
+
+a {
+  color: currentcolor;
+}
+
+/* Utilities */
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size, 14rem), 1fr)
+  );
+  grid-gap: var(--auto-grid-gap, 0);
+  padding: 0;
+}
+
+/* Blocks */
+.profile {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  aspect-ratio: 1/1;
+  position: relative;
+  padding: 1.5rem;
+  color: #ffffff;
+  backface-visibility: hidden;
+  /* text-decoration: none; */
+  overflow: hidden;
+}
+
+.profile::before,
+.profile::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile::before {
+  background: linear-gradient(
+    to top,
+    hsl(0 0% 0% / 0.79) 0%,
+    hsl(0 0% 0% / 0.787) 7.8%,
+    hsl(0 0% 0% / 0.779) 14.4%,
+    hsl(0 0% 0% / 0.765) 20.2%,
+    hsl(0 0% 0% / 0.744) 25.3%,
+    hsl(0 0% 0% / 0.717) 29.9%,
+    hsl(0 0% 0% / 0.683) 34.3%,
+    hsl(0 0% 0% / 0.641) 38.7%,
+    hsl(0 0% 0% / 0.592) 43.3%,
+    hsl(0 0% 0% / 0.534) 48.4%,
+    hsl(0 0% 0% / 0.468) 54.1%,
+    hsl(0 0% 0% / 0.393) 60.6%,
+    hsl(0 0% 0% / 0.31) 68.3%,
+    hsl(0 0% 0% / 0.216) 77.3%,
+    hsl(0 0% 0% / 0.113) 87.7%,
+    hsl(0 0% 0% / 0) 100%
+  );
+  transition: 300ms opacity linear;
+}
+
+.profile::after {
+  background: linear-gradient(
+    45deg,
+    hsl(5 97% 63% / 0.7) 0,
+    hsl(5 97% 63% / 0) 100%
+  );
+  opacity: 0;
+  transition: 300ms opacity linear;
+}
+
+.profile > * {
+  z-index: 1;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  /* z-index: -1; */
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: filter 200ms ease, transform 250ms linear;
+}
+
+.profile h2,
+.profile p {
+  transform: translateY(2ex);
+}
+
+.profile h2 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.03ch;
+  transition: 300ms transform ease;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.profile p {
+  opacity: 0;
+  transition: 300ms opacity linear, 300ms transform ease-in-out;
+}
+
+.profile:focus {
+  outline: 0.5rem solid white;
+  outline-offset: -0.5rem;
+}
+
+.profile:hover :is(h2, p),
+.profile:focus :is(h2, p) {
+  transform: none;
+}
+
+.profile:hover::after,
+.profile:focus::after,
+.profile:hover::before,
+.profile:focus::before {
+  opacity: 0.7;
+}
+
+.profile:hover p,
+.profile:focus p {
+  opacity: 1;
+  transition-delay: 200ms;
+}
+
+.profile:hover img,
+.profile:focus img {
+  filter: grayscale(0);
+  transform: scale(1.05) rotate(1deg);
+}
+
+.name{
+  z-index: 100;
+  color: white;
 }

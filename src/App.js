@@ -7,8 +7,7 @@ import Flying from "./Components/Flying";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Resume from "./Components/Resume";
-import Contact from "./Components/Contact";
-import Testimonials from "./Components/Testimonials";
+import Featured from "./Components/Featured";
 import Projects from "./Components/Projects";
 import { initializeParse } from '@parse/react';
 
@@ -59,8 +58,7 @@ class App extends Component {
         <About data={this.state.resumeData.main} />
         <Resume data={this.state.resumeData.resume} />
         <Projects data={this.state.resumeData.portfolio} />
-        {/* <Testimonials data={this.state.resumeData.testimonials} />
-        <Contact data={this.state.resumeData.main} /> */}
+        <Featured data={this.state.resumeData.features}/>
         <Flying data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
       </div>

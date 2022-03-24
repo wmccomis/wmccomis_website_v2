@@ -52,6 +52,11 @@ class Header extends Component {
               </a>
             </li>
             <li>
+              <a className="smoothscroll" href="#featured">
+                Featured Articles
+              </a>
+            </li>
+            <li>
               <a className="smoothscroll" href="#flying">
                 Flying
               </a>
