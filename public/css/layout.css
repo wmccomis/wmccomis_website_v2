@@ -1258,4 +1258,18 @@ a {
 .name{
   z-index: 100;
   color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.name>span{
+  background-color: black;
+}
+
+.featured-blurred-box{
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  min-height: 100vh;
 }

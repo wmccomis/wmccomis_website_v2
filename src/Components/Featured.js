@@ -5,12 +5,10 @@ class Portfolio extends Component {
     if (this.props.data){
       var features = this.props.data.articles.map(function(article){
         return <div key={article.title}>
-          {/* <li> */}
             <a href={article.url} target="blank" className="profile">
-              <h2 className="name">{article.title}</h2>
+              <div className="name"><span>{article.title}</span></div>
               <img src={article.image} />
             </a>
-          {/* </li> */}
         </div>
       })
     }
@@ -18,14 +16,14 @@ class Portfolio extends Component {
     return (
       <section id="featured">
         <div id="featured_container">
-          {/* <div className="blurred-box"> */}
+          <div className="featured-blurred-box">
             <div className="featured_header">
               <img id="featured_logo" src="/assets/images/breaking_news.jpg"/>
             </div>
             <div className="grid">
               {features}
             </div>
-          {/* </div> */}
+          </div>
         </div>
       </section>
     );
