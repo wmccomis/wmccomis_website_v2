@@ -1021,7 +1021,7 @@ footer .social-links li:first-child {
   position: relative;
   top: -10vh;
   background:
-  url(https://i.imgur.com/ijBveyW.jpg) center center no-repeat;
+  url("/assets/images/flying_background.jpg") center center no-repeat;
   background-size: cover;
   display: inline-block;
 }
@@ -1128,10 +1128,11 @@ a {
   padding: 0;
 }
 
-/* Blocks */
+
 .profile {
   margin: 10px;
   display: flex;
+  /* width: 100%; */
   flex-direction: column;
   justify-content: flex-end;
   aspect-ratio: 1/1;
@@ -1139,7 +1140,6 @@ a {
   padding: 1.5rem;
   color: #ffffff;
   backface-visibility: hidden;
-  /* text-decoration: none; */
   overflow: hidden;
 }
 
