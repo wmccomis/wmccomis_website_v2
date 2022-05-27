@@ -151,5 +151,19 @@
         "url": "https://github.com/wmccomis/wmccomis_website_v2"
       }
     ]
+  }, 
+  "features": {
+    "articles": [
+      {
+        "title": "IDEA CENTER STUDENT INTERN STORIES: WILLIAM MCCOMIS '23 JOINS STARTUP NDX",
+        "image": "/assets/images/profile-pic.jpg",
+        "url": "https://ideacenter.nd.edu/news-events/news/idea-center-student-intern-stories-william-mccomis-23-joins-startup-ndx/"
+      },
+      {
+        "title": "Will McComis — Notre Dame Day 2021",
+        "image": "/assets/images/nd_day_2021.jpg",
+        "url": "https://www.youtube.com/watch?v=yqLI4azXfDY"
+      }
+    ]
   }
 }
