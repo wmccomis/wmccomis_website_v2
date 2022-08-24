@@ -46,7 +46,8 @@
       },
     "work": [
       {
-        "company": "Google, Mountain View, CA",
+        "company": "Google",
+        "location": "Mountain View, California",
         "title": "Software Engineering Intern",
         "years": "May 2022 - August 2022",
         "line1": "Developed detailed design documents with architectural changes to the Google Play Points cluster, which help increase user interaction and points spending while bringing performance increases to the app",
@@ -54,7 +55,8 @@
         "techstack": "Kotlin, Java, Jetpack Compose"
       },
       {
-        "company": "NDX Insights, Tampa Bay, Florida",
+        "company": "NDX Insights",
+        "location": "Tampa, Florida",
         "title": "Android Developer",
         "years": "July 2021 - January 2022",
         "line1": "Developed tracking algorithm which led to an 80% increase in accuracy with a 50% reduction in database calls",
@@ -62,7 +64,8 @@
         "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
       },
       {
-        "company": "Collins Aerospace, Cedar Rapids, Iowa",
+        "company": "Collins Aerospace",
+        "location": "Cedar Rapids, Iowa",
         "title": "Avionics Systems Engineering Intern",
         "years": "July 2021 - January 2022",
         "line1": "Developed next generation Flight Control Panel",
