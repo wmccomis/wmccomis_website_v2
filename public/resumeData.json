@@ -41,16 +41,24 @@
         "major": "Computer Science",
         "dates": "August 2019 - May 2023",
         "description": "",
-        "gpa" : "GPA: 3.973/4.000",
+        "gpa" : "GPA: 3.977/4.000",
         "scholarship": "Trustey Family Merit Scholar"
       },
     "work": [
       {
+        "company": "Google, Mountain View, CA",
+        "title": "Software Engineering Intern",
+        "years": "May 2022 - August 2022",
+        "line1": "Developed detailed design documents with architectural changes to the Google Play Points cluster, which help increase user interaction and points spending while bringing performance increases to the app",
+        "line2": "Collaborated with multiple Play Store teams to modify front-end and RPC layers to deliver a user facing feature that scales to billions of users",
+        "techstack": "Kotlin, Java, Jetpack Compose"
+      },
+      {
         "company": "NDX Insights, Tampa Bay, Florida",
         "title": "Android Developer",
         "years": "July 2021 - January 2022",
-        "line1": "Android development that made substantial contributionsto the company's aviation safety technologies.",
-        "line2": "Developed an API for the company's services that provides crucial data about aircraft dimensions and specifications",
+        "line1": "Developed tracking algorithm which led to an 80% increase in accuracy with a 50% reduction in database calls",
+        "line2": "Algorithm is capable of monitoring the location of dozens of aircraft and ground support equipment to reduce collisions and zone infractions",
         "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
       },
       {
