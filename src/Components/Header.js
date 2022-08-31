@@ -6,7 +6,8 @@ class Header extends Component {
       var name = this.props.data.name;
       var occupation = this.props.data.occupation;
       var description = this.props.data.description;
-      var jobDescription = this.props.data.jobDescription;
+      var jobDescription1 = this.props.data.jobDescription1;
+      var jobDescription2 = this.props.data.jobDescription2;
       var employer = this.props.data.employer;
       var city = this.props.data.address.city;
       var networks = this.props.data.social.map(function (network) {
@@ -75,7 +76,7 @@ class Header extends Component {
             <h3>
               I'm a passionate <span> Pilot </span> and <span>{occupation}</span>,
               {description}
-              <span>{employer}</span> where I<span> {jobDescription}</span>.
+              <span>{employer}</span> {jobDescription1}<span> {jobDescription2}</span>.
             </h3>
             <hr />
             <ul className="social">{networks}</ul>

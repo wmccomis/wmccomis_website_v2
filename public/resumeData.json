@@ -2,19 +2,20 @@
   "main": {
     "name": "Will McComis",
     "occupation": " Computer Science Student at Notre Dame",
-    "description": " currently employed by ",
-    "employer": "Google",
-    "jobDescription": " work on mobile development with Android and Google Play",
+    "description": " currently entering my ",
+    "employer": "Senior Year",
+    "jobDescription1": "where I am diving into",
+    "jobDescription2": " Machine Learning and Computer Vision while growing the Aviation Club here on campus ",
     "image": "profile_pic.jpg",
-    "bio": "Hi! My name is Will McComis. I currently am a Junior at the University of Notre Dame. I am majoring in computer science, however I have a passion for aviation and love pairing the two together. Outside of the classroom, I enjoy being a part of the running club, a member of the CS for Good club, and a founder for the Aviation Association of Notre Dame. In the summer of 2020, I earned my private pilot's license and added an instrument rating to that in January 2021. If you see a plane buzzing over campus on the weekends, that's probably me taking my friends up. Aviation has quickly become a true passion of mine. The engineering fascinates me and I can't stop wanting to learn more and become a better pilot. While I do a lot on campus, I am also part of the Pilots N Paws organization, which connects me with animals in need of transport. Oftentimes, this is for medical needs. I mainly fly dogs in the Midwest such as from Ohio to Chicago. I have found this to be an incredible way for me to use my passion and talent for flying for the good of others. Once I gain enough experience, I hope to become a member of Angel Flight, which will allow me to fly humans in need of medical care such as cancer treatment or organ transplant. In my free time, I enjoy spending time with friends and family, running, wakeboarding, snowboarding, creating fun programs that (sometimes) make my life easier, and of course, flying planes.",
+    "bio": "Hi! My name is Will McComis. I currently am a Senior at the University of Notre Dame. I am majoring in computer science, however I have a passion for aviation and love pairing the two together. Outside of the classroom, I enjoy being a part of the running club, water ski club, and co-founder/co-president of the Aviation Association of Notre Dame. In the summer of 2020, I earned my private pilot's license and added an instrument rating to that in January 2021. If you see a plane buzzing over campus on the weekends, that's probably me taking my friends up. Aviation has quickly become a true passion of mine. The engineering fascinates me and I can't stop wanting to learn more and become a better pilot. While I do a lot on campus, I am also part of the Pilots N Paws organization, which connects me with animals in need of transport. Oftentimes, this is for medical needs. I mainly fly dogs in the Midwest such as from Ohio to Chicago. I have found this to be an incredible way for me to use my passion and talent for flying for the good of others. Once I gain enough experience, I hope to become a member of Angel Flight, which will allow me to fly humans in need of medical care such as cancer treatment or organ transplant. In my free time, I enjoy spending time with friends and family, running, skiing, snowboarding, creating fun programs that (sometimes) make my life easier, and of course, flying planes. Check out my flying section! I have been working really hard on it.",
     "contactmessage": "Interested in learning more about me or sharing your project with me? ",
-    "email": "wmccomis@nd.edu",
+    "email": "willmccomis@gmail.com",
     "phone": "(219) 798-2886",
     "address": {
       "city": "US"
     },
     "website": "http://www.williammccomis.com",
-    "resumedownload": "https://docs.google.com/document/d/1iJZgXSP8s1uz6pHucjUMD-Xey6vLm4nWyNwfzU-ILjw/export?format=pdf",
+    "resumedownload": "https://docs.google.com/document/d/1iJZgXSP8s1uz6pHucjUMD-Xey6vLm4nWyNwfzU-ILjw/edit?usp=sharing",
     "social": [
       {
         "name": "linkedin",
@@ -32,8 +33,8 @@
     "name": "Will McComis",
     "resumemessage": "Computer Science student at the University of Notre Dame with a passion for developing cool programs that make people's lives better",
     "contact": {
-      "email1": "wmccomis@nd.edu",
-      "email2": "williammccomis@gmail.com"
+      "email1": "willmccomis@gmail.com",
+      "email2": "wmccomis@nd.edu"
     },
     "education": {
         "school": "University of Notre Dame, Notre Dame, IN",
@@ -50,26 +51,26 @@
         "location": "Mountain View, California",
         "title": "Software Engineering Intern",
         "years": "May 2022 - August 2022",
-        "line1": "Developed detailed design documents with architectural changes to the Google Play Points cluster, which help increase user interaction and points spending while bringing performance increases to the app",
+        "line1": "Developed detailed design documents with architectural changes to the Google Play Points cluster, which increased user interaction and points spending while bringing performance increases to the app",
         "line2": "Collaborated with multiple Play Store teams to modify front-end and RPC layers to deliver a user facing feature that scales to billions of users",
         "techstack": "Kotlin, Java, Jetpack Compose"
       },
       {
         "company": "NDX Insights",
-        "location": "Tampa, Florida",
-        "title": "Android Developer",
-        "years": "July 2021 - January 2022",
-        "line1": "Developed tracking algorithm which led to an 80% increase in accuracy with a 50% reduction in database calls",
-        "line2": "Algorithm is capable of monitoring the location of dozens of aircraft and ground support equipment to reduce collisions and zone infractions",
+        "location": "Notre Dame, IN",
+        "title": "Software Engineer",
+        "years": "July 2021 - May 2022",
+        "line1": "Developed aircraft tracking algorithm capable of monitoring the location of dozens of aircraft and ground support equipment to reduce ground collisions",
+        "line2": "Kotlin/Java based algorithm led to 80% increase in positional accuracy with a 50% reduction in database calls",
         "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
       },
       {
         "company": "Collins Aerospace",
         "location": "Cedar Rapids, Iowa",
         "title": "Avionics Systems Engineering Intern",
-        "years": "July 2021 - January 2022",
-        "line1": "Developed next generation Flight Control Panel",
-        "line2": "Conducted market research and a rigorous design process to develop a clean-sheet touchscreen panel",
+        "years": "July 2021 - November 2021",
+        "line1": "Developed a touchscreen Flight Control Panel that reduces pilot workload and overall costs by an estimated $25,000 per aircraft",
+        "line2": "Started from a clean sheet design that challenged current current implementations",
         "techstack": "Used C++ and Python to develop the software interface to drive the touchscreen"
       }
     ],
@@ -79,14 +80,14 @@
         "dates": "August 2020 - Present",
         "location": "Griffith, Indiana",
         "description1": "Successfully passed FAA private pilot and instrument rating examinations",
-        "description2": "230+ total hours of flying experience"
+        "description2": "280 total hours of flying experience"
       },
       {
         "title": "Service to Cuba",
         "dates": "July 2018, July 2019",
         "location": "Havana, Cuba",
-        "description1": "Built a website, fundraised, made travel arrangements, and prepared lessons for the students attending the trip",
-        "description2": "Explored the culture, distributed donated items, visited with the elderly of Havana, and helped repaint homes"
+        "description1": "Built a website, fundraised, made travel arrangements, and prepared lessons for the students attending an annual service trip to Havana",
+        "description2": "Two successful trips involving high school students"
       }
     ],
     "skills": {
