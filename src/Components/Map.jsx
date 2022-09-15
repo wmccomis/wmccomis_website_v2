@@ -23,9 +23,6 @@ function Map() {
   const parseQuery = useMemo(
     () => {
       const parseQuery = new Parse.Query('airports');
-      console.log(1)
-      console.log(parseQuery);
-      console.log(2)
       return parseQuery;
     }
   );

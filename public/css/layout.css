@@ -1019,7 +1019,7 @@ footer .social-links li:first-child {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  top: -10vh;
+  top: -6vh;
   background:
   url("/assets/images/flying_background.jpg") center center no-repeat;
   background-size: cover;
@@ -1028,12 +1028,13 @@ footer .social-links li:first-child {
 
 
 .blurred-box{
-  background-color: rgba(255, 255, 255, .15);  
+  background-color: rgba(0, 0, 0, .50);  
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   position: relative;
+  margin-top: 50px;
   width: 100%;
-  height: 100%;
+  height: 10%;
   border-radius: 2px;
   overflow: hidden;
   display: inline-block;
@@ -1041,11 +1042,36 @@ footer .social-links li:first-child {
 
 .flying-header{
   color: white;
-  font-size: x-large;
-  padding-top: 25vh;
+  font-size: xx-large;
+  padding-top: 10vh;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.quick-stats{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  grid-auto-rows: 10px;
+  color: white;
+  font-size: large;
+  padding-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flying-stats{
+  background-color: rgba(0, 0, 0, .20);  
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 90%;
+  margin: auto;
+}
+
+.plane-type-stats{
+  display: flex;
+  justify-content: center;
 }
 
 #map-container{
