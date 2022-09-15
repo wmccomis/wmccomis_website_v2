@@ -29,16 +29,17 @@ const Flying = () => {
     reload // Function that can be used to reload the data
   } = useParseQuery(parseQuery);
 
-  if (!isLoading){
-    var last_90_days = results[0].get("last_90_days")
-    var last_12_months = results[0].get("last_12_months")
-    var types = results[0].get("total_unique_aircraft_types").map(function(plane){
+  var types;
+  var tails;
+
+  if (results && results.length > 0){
+    types = results[0].get("total_unique_aircraft_types").map(function(plane){
       return <div className="plane-type-stats">{plane[0]} :&nbsp; <CountUp end={plane[1]} duration={2} delay={2} enableScrollSpy={true} decimals={2}/></div>
     })
 
     var last_90_days = results[0].get("last_90_days")
     var last_12_months = results[0].get("last_12_months")
-    var tails = results[0].get("total_unique_tail_numbers").map(function(plane){
+    tails = results[0].get("total_unique_tail_numbers").map(function(plane){
       return <div className="plane-type-stats">{plane[0]} :&nbsp; <CountUp end={plane[1]} duration={2} delay={2} enableScrollSpy={true} decimals={2}/></div>
     })
   }
