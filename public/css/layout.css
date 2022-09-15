@@ -1051,7 +1051,7 @@ footer .social-links li:first-child {
 
 .quick-stats{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 0fr));
+  grid-template-columns: repeat(auto-fit, minmax(20%, 2fr));
   gap: 5px;
   grid-auto-rows: 10px;
   color: white;
@@ -1059,6 +1059,26 @@ footer .social-links li:first-child {
   padding-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media(max-width: 800px){
+  .quick-stats {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
+}
+
+@media(max-width: 600px){
+  .quick-stats {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+
+  }
+}
+
+@media(max-width: 400px){
+  .quick-stats {
+    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+
+  }
 }
 
 .flying-stats{
