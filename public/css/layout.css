@@ -1051,7 +1051,7 @@ footer .social-links li:first-child {
 
 .quick-stats{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   grid-auto-rows: 10px;
   color: white;
