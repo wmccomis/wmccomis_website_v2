@@ -61,14 +61,15 @@ const Flying = () => {
           {/* <div className="blurred-box"> */}
           <div className="flying-stats">
             <h1 className="flying-header"> Quick Stats</h1>
-            <h1 className="flying-header"> Total Time</h1>
+            {/* <h1 className="flying-header"> Total Time</h1>
             <div className="quick-stats">
               {total_time && <CountUp end={total_time} duration={2} delay={2} enableScrollSpy={true} decimals={2}/>}
             </div>
             <h1 className="flying-header"> Total Flights</h1>
             <div className="quick-stats">
-              {total_flights && <CountUp end={total_flights} duration={2} delay={2} enableScrollSpy={true} decimals={0}/>}
-            </div><h1 className="flying-header"> Time In Type</h1>
+              {total_flights && <CountUp end={total_flights} duration={2} delay={2} enableScrollSpy={true} decimals={0}/>} */}
+            {/* </div> */}
+            <h1 className="flying-header"> Time In Type</h1>
             <div className="quick-stats">
               {types}
             </div>
