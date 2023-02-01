@@ -77,6 +77,7 @@ class Header extends Component {
               I'm a passionate <span> Pilot </span> and <span>{occupation}</span>,
               {description}
               <span>{employer}</span> {jobDescription1}<span> {jobDescription2}</span>.
+            One of my favorite activities is flying with my dad, as pictured in the background.
             </h3>
             <hr />
             <ul className="social">{networks}</ul>
