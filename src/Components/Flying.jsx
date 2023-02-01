@@ -39,6 +39,9 @@ const Flying = () => {
 
     var last_90_days = results[0].get("last_90_days")
     var last_12_months = results[0].get("last_12_months")
+    var total_flights = results[0].get("total_flights")
+    var total_time = results[0].get("total_time")
+    console.log(total_time)
     tails = results[0].get("total_unique_tail_numbers").map(function(plane){
       return <div className="plane-type-stats">{plane[0]} :&nbsp; <CountUp end={plane[1]} duration={2} delay={2} enableScrollSpy={true} decimals={2}/></div>
     })
@@ -58,7 +61,14 @@ const Flying = () => {
           {/* <div className="blurred-box"> */}
           <div className="flying-stats">
             <h1 className="flying-header"> Quick Stats</h1>
-            <h1 className="flying-header"> Time In Type</h1>
+            <h1 className="flying-header"> Total Time</h1>
+            <div className="quick-stats">
+              {total_time && <CountUp end={total_time} duration={2} delay={2} enableScrollSpy={true} decimals={2}/>}
+            </div>
+            <h1 className="flying-header"> Total Flights</h1>
+            <div className="quick-stats">
+              {total_flights && <CountUp end={total_flights} duration={2} delay={2} enableScrollSpy={true} decimals={0}/>}
+            </div><h1 className="flying-header"> Time In Type</h1>
             <div className="quick-stats">
               {types}
             </div>
