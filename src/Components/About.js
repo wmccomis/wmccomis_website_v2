@@ -29,7 +29,7 @@ class About extends Component {
                   <p className="address">
 						   <span>{name}</span><br />
 						   {/* <span>{phone}</span><br /> */}
-                     <span><a href="mailto:willmccomis@gmail.com"><img src={willmccomis_email} width='80'/>{email}</a></span>
+                     <span><a><img src={willmccomis_email} width='80'/>{email}</a></span>
 					   </p>
                </div>
                <div className="columns download">
