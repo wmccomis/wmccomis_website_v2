@@ -10,6 +10,7 @@ class About extends Component {
       var phone= this.props.data.phone;
       var email = this.props.data.email;
       var resumeDownload = this.props.data.resumedownload;
+      var willmccomis_email = "/assets/images/willmccomis_email.png";
     }
 
     return (
@@ -27,8 +28,8 @@ class About extends Component {
                   <h2>Contact Details</h2>
                   <p className="address">
 						   <span>{name}</span><br />
-						   <span>{phone}</span><br />
-                     <span><a href="mailto:wmccomis@nd.edu">{email}</a></span>
+						   {/* <span>{phone}</span><br /> */}
+                     <span><a href="mailto:willmccomis@gmail.com"><img src={willmccomis_email} width='80'/>{email}</a></span>
 					   </p>
                </div>
                <div className="columns download">
