@@ -24,9 +24,9 @@ class Resume extends Component {
       var work = this.props.data.work.map(function(work){
         return <div key={work.company}>
               <div className="resume-item">
-                <h4>{work.title}</h4>
+                <div><h4>{work.company}</h4><em>{work.location}</em></div>
                 <h5>{work.years}</h5>
-                <p><em>{work.company}</em></p>
+                <p><em>{work.title}</em></p>
                 <ul>
                   <li>{work.line1}</li>
                   <li>{work.line2}</li>
@@ -65,8 +65,8 @@ class Resume extends Component {
               <h4>{name}</h4>
               <p><em>{resumemessage}</em></p>
               <ul>
-                <li>{email1}</li>
-                <li>{email2}</li>
+                <li><img src={"/assets/images/willmccomis_email_white.png"} width="80"/>{email1}</li>
+                <li><img src={"/assets/images/wmccomis_email_white.png"} width="80"/>{email2}</li>
               </ul>
             </div>
 
