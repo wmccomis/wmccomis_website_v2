@@ -22,8 +22,7 @@ function Map() {
 
   const parseQuery = useMemo(
     () => {
-      const parseQuery = new Parse.Query('Airports');
-      console.log(parseQuery);
+      const parseQuery = new Parse.Query('airports');
       return parseQuery;
     }
   );
@@ -44,7 +43,7 @@ function Map() {
       return {
         objectId: airport.id,
         identifier: airport.get("identifier"),
-        Coordinates: {lat: airport.get("Coordinates").latitude, lng: airport.get("Coordinates").longitude}
+        Coordinates: {lat: airport.get("coordinates").latitude, lng: airport.get("coordinates").longitude}
       };
     });
   }
