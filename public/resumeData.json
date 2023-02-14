@@ -42,7 +42,7 @@
         "major": "Computer Science",
         "dates": "August 2019 - May 2023",
         "description": "",
-        "gpa" : "GPA: 3.977/4.000",
+        "gpa" : "GPA: 3.980/4.000",
         "scholarship": "Trustey Family Merit Scholar"
       },
     "work": [
@@ -61,7 +61,7 @@
         "title": "Software Engineer",
         "years": "July 2021 - May 2022",
         "line1": "Developed aircraft tracking algorithm capable of monitoring the location of dozens of aircraft and ground support equipment to reduce ground collisions",
-        "line2": "Kotlin/Java based algorithm led to 80% increase in positional accuracy with a 50% reduction in database calls",
+        "line2": "Kotlin/Java based algorithm led to an increase in positional accuracy with a reduction in database calls",
         "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
       },
       {
@@ -91,19 +91,46 @@
       }
     ],
     "skills": {
-      "technologies": "Github, Heroku, Android Studio, Xcode, AWS API, AWS CLI, SOLIDWORKS, MATLAB, Final Cut Pro, Adobe Premiere Pro, XD",
-      "languages": "C, Python, PostgreSQL, C++, JavaScript, React.js, MongoDB, Java, Kotlin, TensorFlow, PyTorch, Swift, Flutter, Dart, Ruby, Django"
+      "interests": "Aviation, Software Development, Water Skiing, Snow Skiing, Running, Baking, Peter Kaufman",
+      "technologies": "GitHub, Heroku, Android Studio, SOLIDWORKS, MATLAB, Adobe Creative Cloud",
+      "languages": "Python, Java/Kotlin, C++, C, Jetpack Compose, JavaScript/React.js, Node.js, OpenCV,  TensorFlow, PostgreSQL"
     }
   },
   "portfolio": {
     "projects": [
+      {
+        "title1": "Personal ",
+        "title2": "Website ",
+        "title3": "v2",
+        "description1": "This is my most recent and current version of my website with some redesigns over the last iteration",
+        "techStack": "React.js, CSS, HTML, Heroku",
+        "image": "/assets/images/website-v2-background.jpg",
+        "url": "https://github.com/wmccomis/wmccomis_website_v2"
+      },
+      {
+        "title1" : "Aviation association ",
+        "title2" : "of ",
+        "title3" : "Notre Dame",
+        "description1": "Project started in 2021 to begin and grow and aviation club on campus. Currently featuring guest speakers, hosting trivia, planning trips, and putting together plans for a Redbird simulator",
+        "image": "/assets/images/aviation-association-background.png",
+        "url": "https://sites.google.com/view/aadulac/home"
+      },
+      {
+        "title1": "Southwest ",
+        "title2": "Checkin Client",
+        "description1": "Developed a client that allows me to check in for Southwest flights from my computer and linked to my email so it is fully automated",
+        "techStack": "Python, Selenium, Gmail API",
+        "image": "/assets/images/southwest-checkin-background.png",
+        "url": "https://mobile.southwest.com/check-in"
+
+      },
       {
         "title1": "NDX ",
         "title2": "Insights",
         "description1": "Startup focusing on developing technologies that increase aviation safety and increase FBO productivity. Developed mobile app and Aircraft Registration API",
         "techStack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean",
         "image": "/assets/images/ndx-background.jpg",
-        "url": "https://ndxinsights.com"
+        "url": "https://www.ndxcentral.com"
       },
       {
         "title1": "Lead ",
@@ -152,15 +179,6 @@
         "techStack": "Adobe Premiere Pro, After Effects, Photoshop, Final Cut Pro",
         "image": "/assets/images/youtube-background.jpg",
         "url": "https://www.youtube.com/channel/UCm3_y4l2dtPfTsrlgfzN3Gw"
-      },
-      {
-        "title1": "Personal ",
-        "title2": "Website ",
-        "title3": "v2",
-        "description1": "This is my most recent and current version of my website with some redesigns over the last iteration",
-        "techStack": "React.js, CSS, HTML, Heroku",
-        "image": "/assets/images/website-v2-background.jpg",
-        "url": "https://github.com/wmccomis/wmccomis_website_v2"
       }
     ]
   }, 
