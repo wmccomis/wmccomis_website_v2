@@ -66,8 +66,8 @@ class Resume extends Component {
               <h4>{name}</h4>
               <p><em>{resumemessage}</em></p>
               <ul>
-                <li><img src={"/assets/images/willmccomis_email_white.png"} width="80"/>{email1}</li>
-                <li><img src={"/assets/images/wmccomis_email_white.png"} width="80"/>{email2}</li>
+                <li><img src={"/assets/images/willmccomis2_email_white.png"} width="80"/>{email1}</li>
+                {/* <li><img src={"/assets/images/wmccomis_email_white.png"} width="80"/>{email2}</li> */}
               </ul>
             </div>
 

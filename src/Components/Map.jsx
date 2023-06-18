@@ -22,7 +22,7 @@ function Map() {
 
   const parseQuery = useMemo(
     () => {
-      const parseQuery = new Parse.Query('airports');
+      const parseQuery = new Parse.Query('airports2');
       return parseQuery;
     }
   );

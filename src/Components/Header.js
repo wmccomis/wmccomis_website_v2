@@ -5,6 +5,7 @@ class Header extends Component {
     if (this.props.data) {
       var name = this.props.data.name;
       var occupation = this.props.data.occupation;
+      var school = this.props.data.school;
       var description = this.props.data.description;
       var jobDescription1 = this.props.data.jobDescription1;
       var jobDescription2 = this.props.data.jobDescription2;
@@ -74,7 +75,7 @@ class Header extends Component {
           <div className="banner-text">
             <h1 className="responsive-headline">I'm {name}.</h1>
             <h3>
-              I'm a passionate <span> Pilot </span> and <span>{occupation}</span>,
+              I'm a passionate <span> Pilot </span> and <span>{occupation}</span> from the <span>{school}</span>.
               {description}
               <span>{employer}</span> {jobDescription1}<span> {jobDescription2}</span>.
             One of my favorite activities is flying with my dad, as pictured in the background.

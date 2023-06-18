@@ -1,13 +1,14 @@
 {
   "main": {
     "name": "Will McComis",
-    "occupation": " Computer Science Student at Notre Dame",
-    "description": " currently entering my ",
-    "employer": "Senior Year",
-    "jobDescription1": "where I am diving into",
-    "jobDescription2": " Machine Learning and Computer Vision while growing the Aviation Club here on campus ",
+    "occupation": " recent graduate",
+    "school": "University of Notre Dame",
+    "description": " I will soon begin my professional career at ",
+    "employer": "NDX",
+    "jobDescription1": "where I will be leading the devevelopment of",
+    "jobDescription2": " next generation software products for the aviation industry",
     "image": "profile_pic.jpg",
-    "bio": "Hi! My name is Will McComis. I currently am a Senior at the University of Notre Dame. I am majoring in computer science, however I have a passion for aviation and love pairing the two together. Outside of the classroom, I enjoy being a part of the running club, water ski club, and co-founder/co-president of the Aviation Association of Notre Dame. In the summer of 2020, I earned my private pilot's license and added an instrument rating to that in January 2021. If you see a plane buzzing over campus on the weekends, that's probably me taking my friends up. Aviation has quickly become a true passion of mine. The engineering fascinates me and I can't stop wanting to learn more and become a better pilot. While I do a lot on campus, I am also part of the Pilots N Paws organization, which connects me with animals in need of transport. Oftentimes, this is for medical needs. I mainly fly dogs in the Midwest such as from Ohio to Chicago. I have found this to be an incredible way for me to use my passion and talent for flying for the good of others. Once I gain enough experience, I hope to become a member of Angel Flight, which will allow me to fly humans in need of medical care such as cancer treatment or organ transplant. In my free time, I enjoy spending time with friends and family, running, skiing, snowboarding, creating fun programs that (sometimes) make my life easier, and of course, flying planes. Check out my flying section! I have been working really hard on it.",
+    "bio": "Hi! My name is Will McComis. I am a recent graduate from the University of Notre Dame. I earned a BS in Computer Science and found my passion for software development grew during my time at Notre Dame. With my skills, I decided to build a website to showcase my projects and my interests. I earned my private pilot’s certificate in 2020, added an instrument rating in 2021, and recently earned my commercial pilot license in March 2023. It’s safe to say aviation has been a large factor in my life the last three years. Combining my passions for aviation and software, I will be joining the Hiller Group in Tampa leading their technology development at NDX. NDX’s mission is to develop innovative software and hardware solutions that optimize operations at airports and FBOs across the nation. In my website, you will see some of my favorite projects while in college as well as some fun stats about my trips flying the last three years. Check out my flying section! I have been working really hard on it.",
     "contactmessage": "Interested in learning more about me or sharing your project with me? ",
     "email": "@gmail.com",
     "phone": "(219) 798-2886",
@@ -43,9 +44,18 @@
         "dates": "August 2019 - May 2023",
         "description": "",
         "gpa" : "GPA: 3.973/4.000",
-        "scholarship": "Trustey Family Merit Scholar"
+        "scholarship": "Summa Cum Laude"
       },
     "work": [
+      {
+        "company": "NDX",
+        "location": "Tampa, Florida",
+        "title": "Manager of Technology",
+        "years": "August 2023 - Present",
+        "line1": "Leading technology development and innovation at NDX and across the Hiller organization in general.",
+        "line2": "Our team focuses on delivering the industry's premier technological products that focus on airport and FBO operations, management, and safety. Using modern development methods and decades of experience in the industry, we strive to develop products that exceed expectations and deliver unmatched experiences.",
+        "techstack": "Kotlin, Java, Python, Parse, Flask, Digital Ocean"
+      },
       {
         "company": "Google",
         "location": "Mountain View, California",
@@ -56,7 +66,7 @@
         "techstack": "Kotlin, Java, Jetpack Compose"
       },
       {
-        "company": "NDX Insights",
+        "company": "NDX",
         "location": "Notre Dame, IN",
         "title": "Software Engineer",
         "years": "July 2021 - May 2022",
@@ -76,10 +86,10 @@
     ],
     "lifeExperience":[
       {
-        "title": "Instrument Rated Pilot",
+        "title": "Commerical Pilot",
         "dates": "August 2020 - Present",
         "location": "Griffith, Indiana",
-        "description1": "Successfully passed FAA private pilot and instrument rating examinations",
+        "description1": "Successfully passed FAA Private Pilot, Instrument Rating, and Commerical Pilot Examinations",
         "description2": "420 total hours of flying experience"
       },
       {
@@ -111,18 +121,9 @@
         "title1" : "Aviation association ",
         "title2" : "of ",
         "title3" : "Notre Dame",
-        "description1": "Project started in 2021 to begin and grow and aviation club on campus. Currently featuring guest speakers, hosting trivia, planning trips, and putting together plans for a Redbird simulator",
+        "description1": "Project started in 2021 to begin and grow an aviation club on campus. Currently featuring guest speakers, hosting trivia, planning trips, and putting together plans for a Redbird simulator",
         "image": "/assets/images/aviation-association-background.png",
         "url": "https://sites.google.com/view/aadulac/home"
-      },
-      {
-        "title1": "Southwest ",
-        "title2": "Checkin Client",
-        "description1": "Developed a client that allows me to check in for Southwest flights from my computer and linked to my email so it is fully automated",
-        "techStack": "Python, Selenium, Gmail API",
-        "image": "/assets/images/southwest-checkin-background.png",
-        "url": "https://mobile.southwest.com/check-in"
-
       },
       {
         "title1": "NDX ",
