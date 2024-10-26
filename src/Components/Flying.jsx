@@ -20,7 +20,7 @@ const Flying = () => {
           <div className="blurred-box">
             {/* <h1 className="flying-header">Flying. This section will feature a Google Map of all the airports I have been to as well as some ROR back end for my flight log. This is a work in progress.</h1> */}
             <h1 className="flying-header"> Flying</h1>
-            <iframe id="logbook" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlrrjhFol-JKW1pdwdy4b9ptBO98FWBuUyKyWcnG4Zl8lAfcRCLIyI6aiBA8dyKFUsG66g3TwmbTJ4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width={widthVal} height={heightVal}></iframe>
+            {/*<iframe id="logbook" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlrrjhFol-JKW1pdwdy4b9ptBO98FWBuUyKyWcnG4Zl8lAfcRCLIyI6aiBA8dyKFUsG66g3TwmbTJ4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width={widthVal} height={heightVal}></iframe> */}
             <div id="map-container">
               {/* <h1> Airports <span role="img" aria-label="plane">✈️</span></h1> */}
               {isLoaded ? <Map/> : null}
