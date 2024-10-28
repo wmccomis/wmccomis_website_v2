@@ -83,7 +83,7 @@ const Flying = () => {
               {/* <h1> Airports <span role="img" aria-label="plane">✈️</span></h1> */}
               {isLoaded ? <Map/> : null}
             </div>
-          {\*<iframe id="logbook" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlrrjhFol-JKW1pdwdy4b9ptBO98FWBuUyKyWcnG4Zl8lAfcRCLIyI6aiBA8dyKFUsG66g3TwmbTJ4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width={widthVal} height={heightVal}></iframe>*/}
+          {/*<iframe id="logbook" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlrrjhFol-JKW1pdwdy4b9ptBO98FWBuUyKyWcnG4Zl8lAfcRCLIyI6aiBA8dyKFUsG66g3TwmbTJ4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width={widthVal} height={heightVal}></iframe>*/}
           </div>
         {/* </div> */}
       </section>
