@@ -20,7 +20,7 @@ class Footer extends Component {
 
            <ul className="copyright">
               <li>&copy; Copyright 2022 <a title="Will McComis" href="http://www.williammccomis.com/">Will McComis</a></li>
-              <li>Design inspired by <a title="Tim Baker" href="http://www.timbakerdev.com/">Tim Baker</a></li>
+              <li>Design inspired by <a title="Tim Baker" href="http://www.timbaker.me/">Tim Baker</a></li>
            </ul>
 
         </div>
