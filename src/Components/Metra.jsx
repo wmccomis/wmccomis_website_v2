@@ -156,6 +156,44 @@ const Metra = () => {
               </div>
             </form>
           )}
+
+          <div style={{
+            marginTop: '60px',
+            padding: '30px',
+            backgroundColor: '#f9fafb',
+            borderRadius: '8px',
+            border: '1px solid #e5e7eb'
+          }}>
+            <h2 style={{
+              fontSize: '20px',
+              fontWeight: '600',
+              marginBottom: '20px',
+              textAlign: 'center'
+            }}>
+              Privacy Policy
+            </h2>
+            <div style={{
+              fontSize: '14px',
+              color: '#4b5563',
+              lineHeight: '1.8'
+            }}>
+              <p style={{ marginBottom: '15px' }}>
+                <strong>Information We Collect:</strong> We only collect your phone number when you voluntarily opt in to receive SMS notifications about Metra updates.
+              </p>
+              <p style={{ marginBottom: '15px' }}>
+                <strong>How We Use Your Information:</strong> Your phone number is used solely for the purpose of sending you SMS notifications related to Metra service updates, delays, and alerts.
+              </p>
+              <p style={{ marginBottom: '15px' }}>
+                <strong>Data Sharing:</strong> We do not sell, trade, or share your phone number with third parties. Your information is kept confidential and secure.
+              </p>
+              <p style={{ marginBottom: '15px' }}>
+                <strong>Data Retention:</strong> Your phone number will be stored only as long as you remain subscribed to notifications. You can unsubscribe at any time by texting STOP.
+              </p>
+              <p style={{ marginBottom: '0' }}>
+                <strong>Your Rights:</strong> You have the right to opt out at any time by texting STOP. Upon unsubscribing, your phone number will be removed from our system.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
