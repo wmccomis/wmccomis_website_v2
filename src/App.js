@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import $ from "jquery";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Flying from "./Components/Flying";
 import Footer from "./Components/Footer";
@@ -9,6 +10,7 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Featured from "./Components/Featured";
 import Projects from "./Components/Projects";
+import Metra from "./Components/Metra";
 import { initializeParse } from '@parse/react';
 
 initializeParse(
@@ -24,8 +26,8 @@ class App extends Component {
       resumeData: {},
     };
 
-    ReactGA.initialize('UA-000000-01');
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.initialize('G-XXXXXXXXXX');
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }
 
   getResumeData() {
@@ -54,13 +56,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        <Projects data={this.state.resumeData.portfolio} />
-        {/* <Featured data={this.state.resumeData.features}/> */}
-        <Flying data={this.state.resumeData.main} />
-        <Footer data={this.state.resumeData.main} />
+        <Routes>
+          <Route path="/metra" element={<Metra />} />
+          <Route path="/" element={
+            <>
+              <Header data={this.state.resumeData.main} />
+              <About data={this.state.resumeData.main} />
+              <Resume data={this.state.resumeData.resume} />
+              <Projects data={this.state.resumeData.portfolio} />
+              {/* <Featured data={this.state.resumeData.features}/> */}
+              <Flying data={this.state.resumeData.main} />
+              <Footer data={this.state.resumeData.main} />
+            </>
+          } />
+        </Routes>
       </div>
     );
   }

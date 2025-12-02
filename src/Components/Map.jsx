@@ -37,8 +37,8 @@ function Map() {
     reload // Function that can be used to reload the data
   } = useParseQuery(parseQuery);
   
-  if (!isLoading){
-    var airports = []
+  var airports = []
+  if (!isLoading && results && results.length > 0){
     airports = results.map((airport) => {
       return {
         objectId: airport.id,
@@ -58,9 +58,11 @@ function Map() {
   };
 
   const handleOnLoad = (map) => {
-    const bounds = new window.google.maps.LatLngBounds();
-    airports.forEach(({ Coordinates }) => bounds.extend(Coordinates));
-    map.fitBounds(bounds);
+    if (airports && airports.length > 0) {
+      const bounds = new window.google.maps.LatLngBounds();
+      airports.forEach(({ Coordinates }) => bounds.extend(Coordinates));
+      map.fitBounds(bounds);
+    }
   };
 
   var zoomVal = window.innerWidth > 400 ? 5 : 2
