@@ -1,0 +1,12 @@
+services:
+  website:
+    build: .
+    container_name: wmccomis-website
+    ports:
+      - "80:80"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

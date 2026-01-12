@@ -1,0 +1,19 @@
+name: Deploy to Proxmox
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, production]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to VM
+        run: |
+          chmod +x scripts/deploy_vm.sh
+          ./scripts/deploy_vm.sh
