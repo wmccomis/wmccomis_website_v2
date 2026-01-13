@@ -19,14 +19,15 @@ class Resume extends Component {
       var school = this.props.data.education.school;
       var gpa = this.props.data.education.gpa;
       var scholarship = this.props.data.education.scholarship;
+      var interests = this.props.data.skills.interests;
       var technologies = this.props.data.skills.technologies;
       var languages = this.props.data.skills.languages;
       var work = this.props.data.work.map(function(work){
         return <div key={work.company}>
               <div className="resume-item">
-                <h4>{work.title}</h4>
+                <div><h4>{work.company}</h4><em>{work.location}</em></div>
                 <h5>{work.years}</h5>
-                <p><em>{work.company}</em></p>
+                <p><em>{work.title}</em></p>
                 <ul>
                   <li>{work.line1}</li>
                   <li>{work.line2}</li>
@@ -65,8 +66,8 @@ class Resume extends Component {
               <h4>{name}</h4>
               <p><em>{resumemessage}</em></p>
               <ul>
-                <li>{email1}</li>
-                <li>{email2}</li>
+                <li><img src={"/assets/images/willmccomis2_email_white.png"} width="80"/>{email1}</li>
+                {/* <li><img src={"/assets/images/wmccomis_email_white.png"} width="80"/>{email2}</li> */}
               </ul>
             </div>
 
@@ -82,14 +83,18 @@ class Resume extends Component {
             </div>
             <h3 className="resume-title">Skills</h3>
             <div className="resume-item">
+            <p><em>Interests</em></p>
+              <ul>
+                <li>{interests}</li>
+              </ul>
+            <p><em>Languages/Libraries</em></p>
+              <ul>
+                <li>{languages}</li>
+              </ul>    
             <p><em>Technologies</em></p>
               <ul>
                 <li>{technologies}</li>
-              </ul>  
-              <p><em>Languages/Libraries</em></p>
-              <ul>
-                <li>{languages}</li>
-              </ul>           
+              </ul>         
             </div>
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
