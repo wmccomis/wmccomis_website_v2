@@ -11,13 +11,6 @@ import Resume from "./Components/Resume";
 import Featured from "./Components/Featured";
 import Projects from "./Components/Projects";
 import Metra from "./Components/Metra";
-import { initializeParse } from '@parse/react';
-
-initializeParse(
-  process.env.REACT_APP_PARSE_HOST_URL,
-  process.env.REACT_APP_PARSE_APPLICATION_ID,
-  process.env.REACT_APP_PARSE_JAVASCRIPT_KEY
-);
 
 class App extends Component {
   constructor(props) {
