@@ -20,3 +20,75 @@
 .warning{
   color: red;
 }
+
+/* ------------------------------------------------------------------ */
+/* Flying Section — Flight Table & Stats                               */
+/* ------------------------------------------------------------------ */
+
+/* Loading / error state messages */
+.flying-loading,
+.flying-error {
+  text-align: center;
+  padding: 2em;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+
+/* Stat item: label stacked above animated number */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+/* Recent flights table wrapper — horizontal scroll on small screens */
+.recent-flights-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 1em 1.5em;
+}
+
+/* Shared rules for both the spec class name and the actual JSX class name */
+.flights-table,
+.recent-flights-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.flights-table th,
+.recent-flights-table th {
+  padding: 10px 14px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #f0c040;
+  font-family: 'opensans-bold', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid rgba(240, 192, 64, 0.4);
+}
+
+.flights-table td,
+.recent-flights-table td {
+  padding: 9px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.flights-table tr:hover td,
+.recent-flights-table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.07);
+}
