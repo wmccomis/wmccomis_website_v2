@@ -62,14 +62,31 @@ function parseCSV(text) {
   return rows;
 }
 
+const countUpProps = {
+  duration: 2,
+  delay: 0.5,
+  enableScrollSpy: true,
+};
+
+/**
+ * Timezone-safe date parser for M/D/YYYY strings from the sheet.
+ * Using the Date constructor directly with locale strings can shift the date
+ * by a day due to UTC vs local time conversion.
+ */
+const parseFlightDate = (str) => {
+  const [m, d, y] = str.split('/').map(Number);
+  return new Date(y, m - 1, d);
+};
+
 /**
  * Compute all stats needed from the parsed flight rows.
  */
 function computeStats(allRows) {
-  // Filter out rows without a date or total time
-  const flights = allRows.filter(
-    (r) => r['Date'] && r['Total Time'] && r['Total Time'] !== ''
-  );
+  // Filter out rows without a date, an unparseable date, or missing total time
+  const flights = allRows.filter((r) => {
+    if (!r['Date'] || !r['Total Time'] || r['Total Time'] === '') return false;
+    return !isNaN(parseFlightDate(r['Date']));
+  });
 
   const now = new Date();
   const twelveMonthsAgo = new Date(now);
@@ -84,7 +101,7 @@ function computeStats(allRows) {
     const hours = parseFloat(row['Total Time']) || 0;
     totalTime += hours;
 
-    const flightDate = new Date(row['Date']);
+    const flightDate = parseFlightDate(row['Date']);
     if (flightDate >= twelveMonthsAgo) {
       lastYearTime += hours;
       lastYearCount++;
@@ -100,10 +117,10 @@ function computeStats(allRows) {
   const recentFlights = [...flights].reverse().slice(0, 50);
 
   return {
-    totalTime,
+    totalTime: Math.round(totalTime * 10) / 10,
     totalFlights: flights.length,
     byType,
-    lastYearTime,
+    lastYearTime: Math.round(lastYearTime * 10) / 10,
     lastYearCount,
     recentFlights,
   };
@@ -115,30 +132,24 @@ const Flying = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    const controller = new AbortController();
     const fetchData = async () => {
       try {
-        const response = await fetch(SHEETS_CSV_URL);
+        const response = await fetch(SHEETS_CSV_URL, { signal: controller.signal });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const text = await response.text();
-        const rows = parseCSV(text);
-        const computed = computeStats(rows);
-        setStats(computed);
+        setStats(computeStats(parseCSV(text)));
       } catch (err) {
-        console.error("Failed to fetch flight data:", err);
+        if (err.name === 'AbortError') return;
+        console.error('Failed to fetch flight data:', err);
         setError(true);
       } finally {
         setLoading(false);
       }
     };
-
     fetchData();
+    return () => controller.abort();
   }, []);
-
-  const countUpProps = {
-    duration: 2,
-    delay: 0.5,
-    enableScrollSpy: true,
-  };
 
   return (
     <section id="flying">
@@ -222,7 +233,7 @@ const Flying = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {stats.recentFlights.map((row, idx) => {
+                  {stats.recentFlights.map((row) => {
                     const from = row['From'] || '';
                     const to = row['To'] || '';
                     const intermediate = row['Intermediate'] || '';
@@ -230,7 +241,7 @@ const Flying = () => {
                       ? `${from} → ${intermediate} → ${to}`
                       : `${from} → ${to}`;
                     return (
-                      <tr key={idx}>
+                      <tr key={`${row['Date']}-${row['From']}-${row['To']}`}>
                         <td>{row['Date']}</td>
                         <td>{row['Make and Model']}</td>
                         <td>{route}</td>
