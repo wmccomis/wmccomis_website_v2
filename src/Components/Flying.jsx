@@ -69,23 +69,41 @@ const countUpProps = {
 };
 
 /**
- * Timezone-safe date parser for M/D/YYYY strings from the sheet.
- * Using the Date constructor directly with locale strings can shift the date
- * by a day due to UTC vs local time conversion.
+ * Attach a parsed Date to each row by scanning chronologically.
+ * Some entries use M/D/YYYY; others use M/D with no year.
+ * For yearless entries we infer the year from the last known year:
+ * if the month is less than the previous month we've rolled into a new year.
  */
-const parseFlightDate = (str) => {
-  const [m, d, y] = str.split('/').map(Number);
-  return new Date(y, m - 1, d);
-};
+function attachDates(rows) {
+  let lastYear = new Date().getFullYear();
+  let lastMonth = 0;
+  return rows.map((row) => {
+    const str = (row['Date'] || '').trim();
+    const parts = str.split('/').map(Number);
+    if (parts.length === 3 && !isNaN(parts[2])) {
+      const [m, d, y] = parts;
+      lastYear = y;
+      lastMonth = m;
+      return { ...row, _date: new Date(y, m - 1, d) };
+    } else if (parts.length >= 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+      const [m, d] = parts;
+      if (m < lastMonth) lastYear++;
+      lastMonth = m;
+      return { ...row, _date: new Date(lastYear, m - 1, d) };
+    }
+    return { ...row, _date: null };
+  });
+}
 
 /**
  * Compute all stats needed from the parsed flight rows.
  */
 function computeStats(allRows) {
-  // Filter out rows without a date, an unparseable date, or missing total time
-  const flights = allRows.filter((r) => {
-    if (!r['Date'] || !r['Total Time'] || r['Total Time'] === '') return false;
-    return !isNaN(parseFlightDate(r['Date']));
+  const rows = attachDates(allRows);
+  // Filter out rows without a valid date or missing total time
+  const flights = rows.filter((r) => {
+    if (!r['_date'] || !r['Total Time'] || r['Total Time'] === '') return false;
+    return !isNaN(r['_date']);
   });
 
   const now = new Date();
@@ -101,8 +119,7 @@ function computeStats(allRows) {
     const hours = parseFloat(row['Total Time']) || 0;
     totalTime += hours;
 
-    const flightDate = parseFlightDate(row['Date']);
-    if (flightDate >= twelveMonthsAgo) {
+    if (row['_date'] >= twelveMonthsAgo) {
       lastYearTime += hours;
       lastYearCount++;
     }
