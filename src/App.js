@@ -58,7 +58,7 @@ class App extends Component {
               <Resume data={this.state.resumeData.resume} />
               <Projects data={this.state.resumeData.portfolio} />
               {/* <Featured data={this.state.resumeData.features}/> */}
-              <Flying data={this.state.resumeData.main} />
+              <Flying />
               <Footer data={this.state.resumeData.main} />
             </>
           } />

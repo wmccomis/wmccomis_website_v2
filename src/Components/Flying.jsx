@@ -139,11 +139,11 @@ const Flying = () => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const text = await response.text();
         setStats(computeStats(parseCSV(text)));
+        setLoading(false);
       } catch (err) {
         if (err.name === 'AbortError') return;
         console.error('Failed to fetch flight data:', err);
         setError(true);
-      } finally {
         setLoading(false);
       }
     };
@@ -170,17 +170,17 @@ const Flying = () => {
               <div className="plane-type-stats">
                 Total Hours:&nbsp;
                 <CountUp
+                  {...countUpProps}
                   end={stats.totalTime}
                   decimals={1}
-                  {...countUpProps}
                 />
               </div>
               <div className="plane-type-stats">
                 Total Flights:&nbsp;
                 <CountUp
+                  {...countUpProps}
                   end={stats.totalFlights}
                   decimals={0}
-                  {...countUpProps}
                 />
               </div>
             </div>
@@ -191,9 +191,9 @@ const Flying = () => {
                 <div className="plane-type-stats" key={model}>
                   {model}:&nbsp;
                   <CountUp
+                    {...countUpProps}
                     end={hours}
                     decimals={1}
-                    {...countUpProps}
                   />
                 </div>
               ))}
@@ -205,17 +205,17 @@ const Flying = () => {
               <div className="plane-type-stats">
                 Hours:&nbsp;
                 <CountUp
+                  {...countUpProps}
                   end={stats.lastYearTime}
                   decimals={1}
-                  {...countUpProps}
                 />
               </div>
               <div className="plane-type-stats">
                 Flights:&nbsp;
                 <CountUp
+                  {...countUpProps}
                   end={stats.lastYearCount}
                   decimals={0}
-                  {...countUpProps}
                 />
               </div>
             </div>
@@ -233,7 +233,7 @@ const Flying = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {stats.recentFlights.map((row) => {
+                  {stats.recentFlights.map((row, idx) => {
                     const from = row['From'] || '';
                     const to = row['To'] || '';
                     const intermediate = row['Intermediate'] || '';
@@ -241,7 +241,7 @@ const Flying = () => {
                       ? `${from} → ${intermediate} → ${to}`
                       : `${from} → ${to}`;
                     return (
-                      <tr key={`${row['Date']}-${row['From']}-${row['To']}`}>
+                      <tr key={`${idx}-${row['Date']}-${row['From']}-${row['To']}`}>
                         <td>{row['Date']}</td>
                         <td>{row['Make and Model']}</td>
                         <td>{route}</td>
